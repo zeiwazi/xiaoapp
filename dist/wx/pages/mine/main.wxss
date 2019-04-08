@@ -1,0 +1,22 @@
+@import "../../common/vendor.wxss";
+
+.userinfo.data-v-096581b2 {
+  position: relative;
+  width: 750rpx;
+  height: 320rpx;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar.data-v-096581b2 {
+  overflow: hidden;
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  margin-top: 50rpx;
+  border-radius: 50%;
+  border: 4rpx solid #fff;
+  box-shadow: 6rpx 6rpx 20rpx rgba(0, 0, 0, 0.2);
+}

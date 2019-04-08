@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/near/main",
+    "pages/mine/main",
+    "pages/logs/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#333",
+    "borderStyle": "white",
+
+    "list": [{
+      "text": "首页",
+      "pagePath": "pages/index/main",
+      "iconPath": "static/tabs/homeb.png",
+      "selectedIconPath": "static/tabs/home.png"
+    }, {
+      "text": "附近",
+      "pagePath": "pages/near/main",
+      "iconPath": "static/tabs/nearb.png",
+      "selectedIconPath": "static/tabs/near.png"
+    }, {
+      "text": "我的",
+      "pagePath": "pages/mine/main",
+      "iconPath": "static/tabs/mineb.png",
+      "selectedIconPath": "static/tabs/mine.png"
+    }, {
+      "text": "登陆",
+      "pagePath": "pages/logs/main",
+      "iconPath": "static/tabs/mineb.png",
+      "selectedIconPath": "static/tabs/mine.png"
+    }],
+
+    "items": [{
+      "name": "首页",
+      "pagePath": "pages/index/main",
+      "icon": "static/tabs/homeb.png",
+      "activeIcon": "static/tabs/home.png"
+    }, {
+      "name": "附近",
+      "pagePath": "pages/near/main",
+      "icon": "static/tabs/nearb.png",
+      "activeIcon": "static/tabs/near.png"
+    }, {
+      "name": "我的",
+      "pagePath": "pages/mine/main",
+      "icon": "static/tabs/mineb.png",
+      "activeIcon": "static/tabs/mine.png"
+    }, {
+      "name": "登陆",
+      "pagePath": "pages/logs/main",
+      "icon": "static/tabs/mineb.png",
+      "activeIcon": "static/tabs/mine.png"
+    }],
+    "position": "bottom"
+  }
+}

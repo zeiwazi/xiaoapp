@@ -1,0 +1,39 @@
+<template name="fc8e2b78">
+  <view bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_div data-v-13cc6114">
+    <i-notice-bar wx:if="{{show}}" icon="systemprompt" loop class="_i-notice-bar data-v-13cc6114">
+      {{notice}}啦啦啦啦 </i-notice-bar>
+    <i-grid i-class="no-border" class="_i-grid data-v-13cc6114">
+      <i-grid-item wx:key="item" key="{{item}}" i-class="no-border" wx:for="{{grids}}" wx:for-index="index" wx:for-item="item" class="_i-grid-item data-v-13cc6114">
+        <i-grid-label class="_i-grid-label data-v-13cc6114">{{item}}</i-grid-label>
+      </i-grid-item>
+    </i-grid>
+    <i-grid i-class="no-border" class="_i-grid data-v-13cc6114">
+      <i-grid-item i-class="no-border" class="_i-grid-item data-v-13cc6114">
+        <i-grid-icon class="_i-grid-icon data-v-13cc6114">
+          <image src="/static/images/1.png" class="_image data-v-13cc6114"></image>
+        </i-grid-icon>
+        <i-grid-label class="_i-grid-label data-v-13cc6114">lemon</i-grid-label>
+      </i-grid-item>
+      <i-grid-item i-class="no-border" class="_i-grid-item data-v-13cc6114">
+        <i-grid-icon class="_i-grid-icon data-v-13cc6114">
+          <image src="/static/images/2.png" class="_image data-v-13cc6114"></image>
+        </i-grid-icon>
+        <i-grid-label class="_i-grid-label data-v-13cc6114">banana</i-grid-label>
+      </i-grid-item>
+      <i-grid-item i-class="no-border" class="_i-grid-item data-v-13cc6114">
+        <i-grid-icon class="_i-grid-icon data-v-13cc6114">
+          <image src="/static/images/3.png" class="_image data-v-13cc6114"></image>
+        </i-grid-icon>
+        <i-grid-label class="_i-grid-label data-v-13cc6114">appple</i-grid-label>
+      </i-grid-item>
+    </i-grid>
+    <i-panel title="推荐" class="_i-panel data-v-13cc6114">
+      <view class="_view data-v-13cc6114 top-padding">
+        <i-card title extra thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" class="_i-card data-v-13cc6114">
+          <view slot="content" class="_view data-v-13cc6114"></view>
+          <view slot="footer" class="_view data-v-13cc6114"></view>
+        </i-card>
+      </view>
+    </i-panel>
+  </view>
+</template>
