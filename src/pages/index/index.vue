@@ -29,7 +29,7 @@
     </i-grid-item>
 </i-grid>
     <i-panel title="推荐">
-      <view v-for="item in shops":key="item" view class="top-padding">
+      <view v-for="item in shops":key='item' view class="top-padding">
       <i-card title="需要循环" extra="零食" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
         <view slot="content"></view>
         <view slot="footer"></view>
@@ -69,8 +69,9 @@ export default {
       // throw {message: 'custom test'}
     }
   },
-created () {
-    const db = wx.cloud.database({ env: 'edu-868a10' })
+
+  created () {
+    const db = wx.cloud.database({ env: 'shop-2e5118' })
     db.collection('shop').get().then(
       res => {
         console.log(res.data)

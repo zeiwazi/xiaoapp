@@ -6,7 +6,7 @@ App.mpType = 'app'
 
 const app = new Vue(App)
 app.$mount()
-src/main.js
+
 wx.cloud.init({
   traceUser: true
 })

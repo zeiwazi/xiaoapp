@@ -35,8 +35,8 @@ app.$mount();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_13cc6114_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_fileExt_template_wxml_script_js_style_wxss_platform_wx_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_13cc6114_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_fileExt_template_wxml_script_js_style_wxss_platform_wx_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(16);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -90,7 +90,8 @@ if (false) {(function () {
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 11 */
+/* 11 */,
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -169,15 +170,21 @@ if (false) {(function () {
   },
 
   created: function created() {
-    // let app = getApp()
+    var _this = this;
+
+    var db = wx.cloud.database({ env: 'shop-2e5118' });
+    db.collection('shop').get().then(function (res) {
+      console.log(res.data);
+      _this.shops = res.data;
+    });
   }
 });
 
 /***/ }),
-/* 12 */,
 /* 13 */,
 /* 14 */,
-/* 15 */
+/* 15 */,
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -273,20 +280,26 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "title": "推荐",
       "mpcomid": '15'
     }
-  }, [_c('view', {
-    staticClass: "top-padding"
-  }, [_c('i-card', {
-    attrs: {
-      "title": "",
-      "extra": "",
-      "thumb": "https://i.loli.net/2017/08/21/599a521472424.jpg",
-      "mpcomid": '14'
-    }
-  }, [_c('view', {
-    slot: "content"
-  }), _vm._v(" "), _c('view', {
-    slot: "footer"
-  })])], 1)])], 1)
+  }, _vm._l((_vm.shops), function(item, index) {
+    return _c('view', {
+      key: item,
+      staticClass: "top-padding",
+      attrs: {
+        "view": ""
+      }
+    }, [_c('i-card', {
+      attrs: {
+        "title": "需要循环",
+        "extra": "零食",
+        "thumb": "https://i.loli.net/2017/08/21/599a521472424.jpg",
+        "mpcomid": '14_' + index
+      }
+    }, [_c('view', {
+      slot: "content"
+    }), _vm._v(" "), _c('view', {
+      slot: "footer"
+    })])], 1)
+  }))], 1)
 }
 var staticRenderFns = []
 render._withStripped = true

@@ -21,6 +21,10 @@ __WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */].mpType = 'app';
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */]);
 app.$mount();
 
+wx.cloud.init({
+  traceUser: true
+});
+
 /***/ }),
 /* 4 */,
 /* 5 */
