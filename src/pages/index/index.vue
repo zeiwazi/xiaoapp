@@ -29,10 +29,10 @@
     </i-grid-item>
 </i-grid>
     <i-panel title="推荐">
-      <view v-for="item in shops":key='item' view class="top-padding">
+      <view v-for="item in shop":key='item' view class="top-padding">
       <i-card title="需要循环" extra="零食" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-        <view slot="content"></view>
-        <view slot="footer"></view>
+        <view slot="content">56556</view>
+        <view slot="footer">5566622</view>
       </i-card>
     </view>
     </i-panel>
@@ -75,7 +75,7 @@ export default {
     db.collection('shop').get().then(
       res => {
         console.log(res.data)
-        this.shops = res.data
+        this.shop = res.data
       }
     )
     wx.cloud.callFunction({ name: 'cloud' }).then(

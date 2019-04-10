@@ -174,7 +174,7 @@ if (false) {(function () {
     var db = wx.cloud.database({ env: 'shop-2e5118' });
     db.collection('shop').get().then(function (res) {
       console.log(res.data);
-      _this.shops = res.data;
+      _this.shop = res.data;
     });
     wx.cloud.callFunction({ name: 'cloud' }).then(function (res) {
       console.log(res);
@@ -282,7 +282,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "title": "推荐",
       "mpcomid": '15'
     }
-  }, _vm._l((_vm.shops), function(item, index) {
+  }, _vm._l((_vm.shop), function(item, index) {
     return _c('view', {
       key: item,
       staticClass: "top-padding",
@@ -298,9 +298,9 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       }
     }, [_c('view', {
       slot: "content"
-    }), _vm._v(" "), _c('view', {
+    }, [_vm._v("56556")]), _vm._v(" "), _c('view', {
       slot: "footer"
-    })])], 1)
+    }, [_vm._v("5566622")])])], 1)
   }))], 1)
 }
 var staticRenderFns = []
