@@ -1,4 +1,4 @@
-<template name="213f2a8d">
+<template name="1a5d8cd2">
   <view class="_div data-v-4eb69cbc">
     <i-tabs current="{{current_scroll}}" scroll bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_i-tabs data-v-4eb69cbc">
       <i-tab key="tab1" title="选项1" class="_i-tab data-v-4eb69cbc"></i-tab>

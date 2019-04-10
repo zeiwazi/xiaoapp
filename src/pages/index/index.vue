@@ -70,7 +70,7 @@ export default {
     }
   },
 
-  created () {
+ created () {
     const db = wx.cloud.database({ env: 'shop-2e5118' })
     db.collection('shop').get().then(
       res => {
@@ -78,6 +78,9 @@ export default {
         this.shops = res.data
       }
     )
+    wx.cloud.callFunction({ name: 'cloud' }).then(
+      res => {console.log(res)}
+)
   }
 }
 </script>
