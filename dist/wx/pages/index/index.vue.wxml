@@ -1,4 +1,4 @@
-<template name="fc8e2b78">
+<template name="5a09924c">
   <view bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_div data-v-13cc6114">
     <i-notice-bar wx:if="{{show}}" icon="systemprompt" loop class="_i-notice-bar data-v-13cc6114">
       {{notice}}啦啦啦啦 </i-notice-bar>
