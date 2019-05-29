@@ -1,7 +1,7 @@
 <template>
   <div @click="clickHandle">
     <i-notice-bar v-if='show' icon="systemprompt" loop>
-    {{notice}}啦啦啦啦
+    {{notice}}
     </i-notice-bar>
     <i-grid i-class="no-border">
     <i-grid-item v-for="item in grids" :key="item" i-class="no-border">
