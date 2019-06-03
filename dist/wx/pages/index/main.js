@@ -204,7 +204,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "loop": "",
       "mpcomid": '0'
     }
-  }, [_vm._v("\n    " + _vm._s(_vm.notice) + "啦啦啦啦\n    ")]) : _vm._e(), _vm._v(" "), _c('i-grid', {
+  }, [_vm._v("\n    " + _vm._s(_vm.notice) + "\n    ")]) : _vm._e(), _vm._v(" "), _c('i-grid', {
     attrs: {
       "i-class": "no-border",
       "mpcomid": '3'

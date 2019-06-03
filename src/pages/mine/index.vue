@@ -1,4 +1,4 @@
-<template>
+.0<template>
   <div>
     <view class="userinfo">
     <view class="userinfo-avatar">
